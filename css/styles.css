@@ -72,6 +72,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid #ececec;
 }
 
 .header-logo {
@@ -160,7 +161,7 @@ img {
 
 .hero-button {
   font-family: inherit;
-  width: 200px;
+  min-width: 200px;
   height: 50px;
   color: var(--white-accent);
   background: var(--accent-color);
@@ -208,10 +209,13 @@ img {
 
 .button-one {
   font-family: inherit;
-  width: 73px;
+  min-width: 73px;
   height: 38px;
   color: var(--button-color);
   background: var(--button-background-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border: 1px solid var(--button-background-color);
   border-radius: 4px;
 }
 
@@ -223,10 +227,13 @@ img {
 
 .button-two {
   font-family: inherit;
-  width: 128px;
+  min-width: 128px;
   height: 38px;
   color: var(--button-color);
   background: var(--button-background-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border: 1px solid var(--button-background-color);
   border-radius: 4px;
 }
 
@@ -238,10 +245,13 @@ img {
 
 .button-three {
   font-family: inherit;
-  width: 145px;
+  min-width: 145px;
   height: 38px;
   color: var(--button-color);
   background: var(--button-background-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border: 1px solid var(--button-background-color);
   border-radius: 4px;
 }
 
@@ -253,10 +263,13 @@ img {
 
 .button-four {
   font-family: inherit;
-  width: 103px;
+  min-width: 103px;
   height: 38px;
   color: var(--button-color);
   background: var(--button-background-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border: 1px solid var(--button-background-color);
   border-radius: 4px;
 }
 
@@ -268,10 +281,13 @@ img {
 
 .button-five {
   font-family: inherit;
-  width: 130px;
+  min-width: 130px;
   height: 38px;
   color: var(--button-color);
   background: var(--button-background-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border: 1px solid var(--button-background-color);
   border-radius: 4px;
 }
 
@@ -290,13 +306,17 @@ img {
 .projects-list {
   display: flex;
   flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
   margin-top: 25px;
   padding-bottom: 94px;
 }
 
-.portfolio-item:nth-child(3n) {
-  margin-right: 30px;
+.portfolio-item {
+  flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .img-atributes-port {
@@ -354,6 +374,7 @@ img {
 
 .work-img {
   display: flex;
+  width: calc((100% - 60px) / 3);
   padding-bottom: 94px;
 }
 
@@ -380,12 +401,12 @@ img {
 
 .crew-list {
   display: flex;
-  flex-wrap: wrap;
+  margin-left: -30px;
   padding-bottom: 94px;
 }
 
-.crew-item:nth-child(n + 2) {
-  /* margin-right: 30px; */
+.crew-item {
+  flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
 }
 
