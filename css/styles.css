@@ -191,11 +191,6 @@ img {
 
 /* ---------------------------Hero portfolio-------------------------- */
 
-.main-portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .button-list {
   display: none;
 }
@@ -323,8 +318,9 @@ img {
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
-  border-bottom: 30px;
-  border: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .project-name {
@@ -333,7 +329,7 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--h-color);
-  padding-bottom: 4px;
+  margin-bottom: 4px;
 }
 
 .project-sphere {
@@ -345,9 +341,12 @@ img {
 
 /* ---------------------------Competences html-------------------------- */
 
-.competences {
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.competences {
 }
 
 .competences-list {
@@ -372,12 +371,13 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--p-color);
+  width: 270px;
 }
 
 /* -----------------work html--------------------------- */
 
-.work {
-  padding-bottom: 94px;
+.zero {
+  padding-top: 0;
 }
 
 .work-img {
@@ -402,7 +402,7 @@ img {
 
 /* -----------------crew html--------------------------- */
 
-.crew {
+.bg {
   background-color: var(--button-background-color);
 }
 
@@ -414,7 +414,6 @@ img {
 .crew-item {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
-  margin-bottom: 94px;
   background-color: var(--white-accent);
   border-radius: 0px 0px 4px 4px;
 }
@@ -427,7 +426,6 @@ img {
   letter-spacing: 0.03em;
   color: var(--h-color);
   margin-bottom: 50px;
-  padding-top: 94px;
 }
 
 .img-atributes-hdr {
@@ -442,7 +440,7 @@ img {
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--h-color);
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .crew-profession {
@@ -476,7 +474,7 @@ img {
 }
 
 .fo-it {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 .map-link {
